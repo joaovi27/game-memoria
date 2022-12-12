@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href ="../css/reset.css">
+    <link rel="stylesheet" href ="../css/game.css">
+    <link rel="stylesheet" href ="../css/login.css">
+    <script defer src="../js/game.js"></script>
+    <script defer src="../js/timer.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Game</title>
+    <link rel ="shortcut icon" href="../images/icon.ico">
+</head>
+<body>
+  
+
+  <div class="modalcontainerr">
+    <div class="modalgameover">       
+      <div class = "animacaogameover">
+        <span>T</span>
+        <span>e</span>
+        <span>m</span>
+        <span>p</span>
+        <span>o</span>
+       
+      </div>
+      <div class = "animacaogameover">
+     
+        <span>E</span>
+        <span>s</span>
+        <span>g</span>
+        <span>o</span>
+        <span>t</span>
+        <span>a</span>
+        <span>d</span>
+        <span>o</span>
+      </div>
+      <img src="../images/gameover.png" alt="mario icon">
+
+      <a href="./game.html"><button class="botao">Voltar</button></a>   
+      <a href="../index.html"><button class="botao">Menu</button></a>
+
+    </div>
+    
+          
+
+  </div>
+
+
+
+  <main>
+    <!--testar atributo autoload-->
+    <audio id="myaudio" loop>
+      <source src="../audio/SnesMenu.mp3">
+    </audio>
+    
+<button class="botaoaudio"onclick="playaudio()" ><span class="material-symbols-outlined">
+  volume_up
+  </span></button>
+<button class="botaoaudio"onclick="pauseaudio()"><span class="material-symbols-outlined">
+  volume_off
+  </span></button>
+  <div class = "animacaotitulo">
+    <span>N</span>
+    <span>i</span>
+    <span>n</span>
+    <span>t</span>
+    <span>e</span>
+    <span>n</span>
+    <span>d</span>
+    <span>o</span>
+    <span>   </span>
+    <span>M</span>
+    <span>e</span>
+    <span>m</span>
+    <span>o</span>
+    <span>r</span>
+    <span>i</span>
+    <span>e</span>
+    <span>s</span>
+</div>
+
+        <!--Tela contendo nome e tempo-->
+        <header>
+            <span class="player"></span>
+            <span>Tempo: <span class="timer">00</span></span>
+          </header>
+      
+
+    
+        <div class="grid"> </div> 
+      
+
+        <a href="./game.html"><button class="botao">Restart</button></a>
+        <a href="../index.html"><button class="botao">Menu</button></a>
+       
+   
+   
+
+
+    <div class="modalcontainer">
+
+        <div class="modal">
+
+   
+          <div class = "animacaotitulo">
+            <span>P</span>
+            <span>a</span>
+            <span>r</span>
+            <span>á</span>
+            <span>b</span>
+            <span>e</span>
+            <span>n</span>
+            <span>s</span>
+          </div>
+      
+          
+          <img src="../images/winner.gif" alt="mario icon">
+       
+          <div class="btns">
+          
+            <button class="btnclose" onclick = "closemodal()">close</button>
+
+          </div>
+        </div>
+      </div>
+
+
+      
+    
+
+    </main>
+
+  
+    <script src="../js/game.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,301 @@
+body {
+    background-image: url('../images/animationfundo.gif');
+   /* display: flex;*/
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20 20 50;
+    background-size: contain;
+    
+}
+.body2 {
+    background-image: url('../images/animationfundo.gif');
+   display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20 20 50;
+    background-size: contain;
+    
+}
+
+.login_form {
+position: absolute;
+display: flex;
+align-items:center;
+flex-direction: column;
+height: 100vh;
+justify-content: center;
+
+}
+
+.login_header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 13px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px;
+    animation-name: animacao;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacao{
+   
+    0% {border: 2px solid var(--color1);}
+    33% {border: 2px solid var(--color2);}
+    66% {border: 2px solid var(--color3);}
+    100% {border: 2px solid var(--color4);}
+}
+
+
+
+/*Imagem Tela Login*/
+.login_header img{
+    width: 800px;
+    
+}
+
+/*Campo Inserção Nome*/
+.login_input{
+    border: 2.3px solid rgb(157, 0, 0);
+    border-radius: 8px;
+    color:rgb(190, 190, 190);
+    font-size: 1em;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 300px;
+    outline:none;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*Botao Voltar e Menu - Tela GameT*/
+.botao{
+   
+    background-color: #2b5eca;
+    border: 2px solid rgb(142, 142, 142);
+    padding: 15px;
+    color: white;
+    border-radius: 7px;
+    cursor:pointer;
+    font-size: 1em;
+    width: 100%;
+    max-width: 150px;
+    margin-top:20px;
+    text-decoration: none;
+
+}
+
+/*Botão Login Habilitado*/
+.login_button{
+   
+    background-color: #2b5eca;
+    border: 1px solid rgb(58, 58, 58);
+    padding: 9px;
+    color: white;
+    border-radius: 7px;
+    cursor:pointer;
+    font-size: 1em;
+    width: 100%;
+    max-width: 150px;
+}
+
+/*Botão Login Desabilitado*/
+.login_button:disabled{
+    background-color: rgb(168, 168, 168);
+    color: rgb(97, 97, 97);
+    border: none;
+    cursor:auto;
+    
+}
+
+
+
+
+
+
+/*Animação do título incial de Login*/
+/*Cores Letras Login*/
+:root{
+    --color1: yellow;
+    --color2: red;
+    --color3: blue;
+    --color4: rgb(19, 182, 19);
+    --colorBack:white;
+}
+
+.animacaotitulo span{
+    animation-name: brilhoheader;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    color: none;
+    font-size: 1.5em;
+    margin-top: 15px;
+    
+}
+.animacaotitulo span:nth-of-type(1){
+    animation-delay: 0s;
+   color:var(--color1);
+}
+.animacaotitulo span:nth-of-type(2){
+    animation-delay: 0.25s;
+    color:var(--color2);
+}
+.animacaotitulo span:nth-of-type(3){
+    animation-delay: 0.50s;
+    color:var(--color3);
+}
+.animacaotitulo span:nth-of-type(4){
+    animation-delay: 0.75s;
+    color:var(--color4);
+}
+.animacaotitulo span:nth-of-type(5){
+    animation-delay: 1s;
+    color:var(--color1);
+}
+.animacaotitulo span:nth-of-type(6){
+    animation-delay: 1.25s;
+    color:var(--color2);
+}
+.animacaotitulo span:nth-of-type(7){
+    animation-delay: 1.50s;
+    color:var(--color3);
+}
+.animacaotitulo span:nth-of-type(8){
+    animation-delay: 1.75s;
+    color:var(--color4);
+}
+.animacaotitulo span:nth-of-type(9){
+    animation-delay: 2.00s;
+    color:var(--color1);
+}
+.animacaotitulo span:nth-of-type(10){
+    animation-delay: 2.25s;
+    color:var(--color2);
+}
+.animacaotitulo span:nth-of-type(11){
+    animation-delay: 2.50s;
+    color:var(--color3);
+}
+.animacaotitulo span:nth-of-type(12){
+    animation-delay: 2.75s;
+    color:var(--color4);
+}
+.animacaotitulo span:nth-of-type(13){
+    animation-delay: 3s;
+    color:var(--color1);
+}
+.animacaotitulo span:nth-of-type(14){
+    animation-delay: 3.25s;
+    color:var(--color2);
+}
+.animacaotitulo span:nth-of-type(15){
+    animation-delay: 3.50s;
+    color:var(--color3);
+}
+.animacaotitulo span:nth-of-type(16){
+    animation-delay: 3.75s;
+    color:var(--color4);
+}
+.animacaotitulo span:nth-of-type(17){
+    animation-delay: 4s;
+    color:var(--color1);
+}
+
+
+@keyframes brilhoheader {
+    0%{
+        color:none;
+        text-shadow: 0 0 20px var(--colorBack),
+        0 0 50px var(--colorBack), 
+        0 0 100px var(--colorBack);
+    }
+    10%, 90%{
+        color: none;
+        text-shadow: 0 0 20px var(--colorBack);
+    }
+
+}
+.animacaogameover span:nth-of-type(1){
+    animation-delay: 0s;
+   color:rgb(237, 237, 237);
+}
+.animacaogameover span:nth-of-type(2){
+    animation-delay: 0.25s;
+    color:rgb(182, 182, 182);
+}
+.animacaogameover span:nth-of-type(3){
+    animation-delay: 0.50s;
+    color:rgb(237, 237, 237);
+}
+.animacaogameover span:nth-of-type(4){
+    animation-delay: 0.75s;
+    color:rgb(182, 182, 182);
+}
+.animacaogameover span:nth-of-type(5){
+    animation-delay: 1s;
+    color:rgb(237, 237, 237);
+}
+.animacaogameover span:nth-of-type(6){
+    animation-delay: 1.25s;
+    color:rgb(182, 182, 182);
+}
+.animacaogameover span:nth-of-type(7){
+    animation-delay: 1.50s;
+    color:rgb(237, 237, 237);
+}
+.animacaogameover span:nth-of-type(8){
+    animation-delay: 1.75s;
+    color:rgb(182, 182, 182);
+}
+
+@keyframes brilhogameover {
+    0%{
+        color:none;
+        text-shadow: 0 0 20px black,
+        0 0 50px black, 
+        0 0 100px black;
+    }
+    10%, 90%{
+        color: none;
+        text-shadow: 0 0 20px black;
+    }
+
+}
+
+.animacaogameover span{
+    animation-name: brilhogameover;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    color: none;
+    font-size: 1.5em;
+    margin-top: 15px;
+    
+}
+
+
+
+/*
+@keyframes brilho {
+    0%{
+        color:gray;
+        text-shadow: 0 0 12px var(--colorBlue), 0 0 50px var(--colorBlue), 0 0 100px var(--colorBlue);
+    }
+    10%, 90%{
+        color: red;
+        text-shadow: none;
+    }
+
+}
+*/
+
